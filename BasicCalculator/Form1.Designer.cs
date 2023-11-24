@@ -32,8 +32,10 @@
             this.txtBoxNum1 = new System.Windows.Forms.TextBox();
             this.cbBox1 = new System.Windows.Forms.ComboBox();
             this.txtBoxNum2 = new System.Windows.Forms.TextBox();
-            this.txtBoxNum3 = new System.Windows.Forms.TextBox();
             this.btnCompute = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbtotal = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -48,6 +50,7 @@
             // 
             // txtBoxNum1
             // 
+            this.txtBoxNum1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNum1.Location = new System.Drawing.Point(46, 73);
             this.txtBoxNum1.Multiline = true;
             this.txtBoxNum1.Name = "txtBoxNum1";
@@ -69,20 +72,12 @@
             // 
             // txtBoxNum2
             // 
+            this.txtBoxNum2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNum2.Location = new System.Drawing.Point(46, 172);
             this.txtBoxNum2.Multiline = true;
             this.txtBoxNum2.Name = "txtBoxNum2";
             this.txtBoxNum2.Size = new System.Drawing.Size(179, 41);
             this.txtBoxNum2.TabIndex = 3;
-            // 
-            // txtBoxNum3
-            // 
-            this.txtBoxNum3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtBoxNum3.Location = new System.Drawing.Point(46, 247);
-            this.txtBoxNum3.Multiline = true;
-            this.txtBoxNum3.Name = "txtBoxNum3";
-            this.txtBoxNum3.Size = new System.Drawing.Size(179, 60);
-            this.txtBoxNum3.TabIndex = 4;
             // 
             // btnCompute
             // 
@@ -96,14 +91,32 @@
             this.btnCompute.UseVisualStyleBackColor = false;
             this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel1.Controls.Add(this.lbtotal);
+            this.panel1.Location = new System.Drawing.Point(37, 228);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 83);
+            this.panel1.TabIndex = 6;
+            // 
+            // lbtotal
+            // 
+            this.lbtotal.AutoSize = true;
+            this.lbtotal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtotal.Location = new System.Drawing.Point(40, 40);
+            this.lbtotal.Name = "lbtotal";
+            this.lbtotal.Size = new System.Drawing.Size(0, 16);
+            this.lbtotal.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(261, 379);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCompute);
-            this.Controls.Add(this.txtBoxNum3);
             this.Controls.Add(this.txtBoxNum2);
             this.Controls.Add(this.cbBox1);
             this.Controls.Add(this.txtBoxNum1);
@@ -111,6 +124,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,8 +137,9 @@
         private System.Windows.Forms.TextBox txtBoxNum1;
         private System.Windows.Forms.ComboBox cbBox1;
         private System.Windows.Forms.TextBox txtBoxNum2;
-        private System.Windows.Forms.TextBox txtBoxNum3;
         private System.Windows.Forms.Button btnCompute;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbtotal;
     }
 }
 

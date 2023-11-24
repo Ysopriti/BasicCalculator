@@ -25,32 +25,36 @@ namespace BasicCalculator
             float num1 = (float)Convert.ToDouble(txtBoxNum1.Text);
             float num2 = (float)Convert.ToDouble(txtBoxNum2.Text);
 
-            if (btnCompute.Text == "+")
+            if (cbBox1.Text == "+")
             {
                 float result = BasicComputation.Addition(num1, num2);
                 string Result = result.ToString();
-                txtBoxNum3.Text = Result;
+                Console.WriteLine(Result);
+                lbtotal.Text = Result;
 
             }
-            else if (btnCompute.Text == "-")
+            else if (cbBox1.Text == "-")
             {
                 float result = BasicComputation.Subtraction(num1, num2);
                 string Result = result.ToString();
-                txtBoxNum3.Text = Result;
+                Console.WriteLine(Result);
+                lbtotal.Text = Result;
 
             }
-            else if (btnCompute.Text == "*")
+            else if (cbBox1.Text == "*")
             {
                 float result = BasicComputation.Multiplication(num1, num2);
                 string Result = result.ToString();
-                txtBoxNum3.Text = Result;
+                Console.WriteLine(Result);
+                lbtotal.Text = result.ToString();
 
             }
-            else if (btnCompute.Text == "/")
+            else if (cbBox1.Text == "/")
             {
                 float result = BasicComputation.Division(num1, num2);
                 string Result = result.ToString();
-                txtBoxNum3.Text = Result;
+                Console.WriteLine(Result);
+                lbtotal.Text = Result;
 
             }
         }
